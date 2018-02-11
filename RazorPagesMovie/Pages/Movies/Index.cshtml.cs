@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using RazorPagesMovie.DAL;
 using RazorPagesMovie.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace RazorPagesMovie.Pages.Movies
 {
@@ -19,7 +15,7 @@ namespace RazorPagesMovie.Pages.Movies
             _context = context;
         }
 
-        public IList<Movie> Movie { get;set; }
+        public IList<Movie> Movie { get; set; }
 
         public async Task OnGetAsync()
         {
